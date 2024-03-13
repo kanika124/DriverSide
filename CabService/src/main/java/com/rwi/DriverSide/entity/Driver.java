@@ -1,5 +1,6 @@
 package com.rwi.DriverSide.entity;
 
+import com.rwi.DriverSide.Booking;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,9 +19,10 @@ public class Driver {
     private String name;
     private String mobileNo;
     private String licenseNo;
-    private boolean status;
-//    @OneToOne
-//    private Vehicle vehicle;
+    @Enumerated(EnumType.STRING)
+    private Booking booking;
+    @OneToOne
+    private Vehicle vehicle;
     private String password;
 
 }
