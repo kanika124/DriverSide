@@ -14,6 +14,7 @@ public class DriverImpl implements DriverService {
     DriverRepo repo;
     @Override
     public Driver addDriver(Driver driver) {
+
         return repo.save(driver);
     }
 
@@ -50,6 +51,16 @@ public class DriverImpl implements DriverService {
     @Override
     public List<Driver> getAllDriver() {
         return repo.findAll();
+    }
+
+    @Override
+    public Driver login(String driverId, String password) {
+        return null;
+    }
+
+    @Override
+    public Driver logins(String mobNo, String password) {
+        return null;
     }
 
     @Override
