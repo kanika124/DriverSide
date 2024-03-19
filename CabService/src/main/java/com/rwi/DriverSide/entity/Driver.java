@@ -1,6 +1,6 @@
 package com.rwi.DriverSide.entity;
 
-import com.rwi.DriverSide.Booking;
+import com.rwi.DriverSide.enumm.Booking;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Entity
 public class Driver {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int driverId;
     private String name;
     private String mobileNo;

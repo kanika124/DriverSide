@@ -21,7 +21,7 @@ public class DriverController {
 
     //updateDriverMobNo
     @PutMapping("/{id}/mobile")
-    public Driver updateDriverMob(@PathVariable int id,@RequestParam String mobNo){
+    public Driver updateDriverMob(@PathVariable int id,@RequestParam("mobNo") String mobNo){
         return driverImp.updateDriverMob(id,mobNo);
     }
 

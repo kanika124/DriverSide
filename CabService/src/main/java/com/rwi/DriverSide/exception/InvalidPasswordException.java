@@ -9,5 +9,6 @@ public class InvalidPasswordException extends Exception{
 
     public String getMessage(){
         return message;
+
     }
 }
