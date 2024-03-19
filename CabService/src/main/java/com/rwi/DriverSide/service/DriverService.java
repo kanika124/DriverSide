@@ -1,7 +1,6 @@
 package com.rwi.DriverSide.service;
 
 import com.rwi.DriverSide.entity.Driver;
-import org.springframework.http.HttpStatus;
 
 
 import java.util.List;
@@ -11,8 +10,7 @@ public interface DriverService {
 
 //    public Driver updateDriverById(int id,Driver updatedDriver);
      Driver updateDriverMob(int id,String mobNo);
-     Driver updatelicenseNo(int id,String licenseNo);
-
+     Driver updateLicenseNo(int id, String licenseNo);
      Driver getDriverById(int id);
      List<Driver> getAllDriver();
      Driver login(String driverId,String password);

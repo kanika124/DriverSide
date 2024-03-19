@@ -28,7 +28,7 @@ public class DriverController {
     //updateDriverLicenseNo
     @PutMapping("/{id}/license")
     public Driver updateLicenseNo(@PathVariable int id,@RequestParam String licenseNo){
-        return driverImp.updatelicenseNo(id,licenseNo);
+        return driverImp.updateLicenseNo(id,licenseNo);
     }
 
     //getDriverById

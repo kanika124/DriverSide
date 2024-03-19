@@ -35,7 +35,7 @@ public class DriverImpl implements DriverService {
     }
 
     @Override
-    public Driver updatelicenseNo(int id, String licenseNo) {
+    public Driver updateLicenseNo(int id, String licenseNo) {
        Driver driver= repo.findById(id).get();
        driver.setLicenseNo(licenseNo);
        repo.save(driver);

@@ -21,5 +21,6 @@ public class Vehicle {
     private Driver driver;
     @Enumerated(EnumType.STRING)
     private BookingType bookingType;
-    private VehicleType vehicleType;
+    private String vehiclePlateNo;
+
 }
